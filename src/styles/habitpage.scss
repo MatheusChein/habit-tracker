@@ -1,10 +1,11 @@
+@import 'root.scss';
 #habitpage {
   header {
     display: flex;
     justify-content: space-between;
     height: 7rem;
     align-items: center;
-    border-bottom: 1px double hsl(0, 54%, 58%);
+    border-bottom: 1px double hsl($hue_color, 54%, 58%);
 
     :link {
       text-decoration: none;
@@ -14,23 +15,38 @@
       font: 400 3rem 'Poppins', sans-serif;
 
       // First color Logo
-      color: hsl(0, 75%, 37%);
+      color: hsl($hue_color, 75%, 37%);
 
       // Second color Logo
       span {
-        color: hsl(0, 94%, 66%);
+        color: hsl($hue_color, 94%, 66%);
       }
     }
 
     .months_selection {
       margin-right: 3.5rem;
       font: 400 1.5rem 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
 
-      color: hsl(0, 94%, 66%);
-      span {
-        margin-left: 1.5rem;
-        color: hsl(0, 75%, 37%);
-        word-spacing: 0.5rem;
+      color: hsl($hue_color, 94%, 66%);
+      .selector {
+        display: flex;
+        align-items: center;
+        select {
+          margin-left: 3.5rem;
+          text-align-last: center;
+          background: hsl($hue_color, 51%, 71%);
+          border-radius: 0.5rem;
+          height: 2rem;
+          padding: 0 2rem;
+          border: 0;
+          font: 400 1rem 'Poppins', sans-serif;
+          text-align: center;
+          outline: none;
+          //-webkit-appearance: none;
+          //-moz-appearance: none;
+        }
       }
     }
   }
@@ -43,19 +59,39 @@
     .functions {
       margin-left: 3.5rem;
       img {
-        padding: 0 1rem;
+        padding: 0;
       }
     }
 
-    .days {
+    .daysheader {
+      display: flex;
+      align-items: center;
       margin-right: 3.5rem;
       font: 400 1.5rem 'Poppins', sans-serif;
 
-      color: hsl(0, 94%, 66%);
-      span {
+      color: hsl($hue_color, 94%, 66%);
+
+      .days {
+        display: flex;
+        align-items: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        font: 400 1.125rem 'Poppins', sans-serif;
         margin-left: 1.5rem;
-        color: hsl(0, 75%, 37%);
-        word-spacing: 0.5rem;
+        color: hsl($hue_color, 75%, 37%);
+        gap: 1rem;
+
+        span {
+          width: 24px;
+          height: 24px;
+          border: 0.2px solid hsl($hue_color, 75%, 37%);
+          border-radius: 0.2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
@@ -63,22 +99,31 @@
     position: absolute;
     bottom: 0;
     width: 100vw;
-    background: hsla(0, 94%, 66%, 0.5);
+    background: hsla($hue_color, 94%, 66%, 0.5);
     padding: 1rem 1rem;
     font: 400 1rem 'Poppins', sans-serif;
 
     div {
       position: relative;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      text-align: center;
+
       align-items: center;
+      margin-left: 0;
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        margin-left: 2.5rem;
+        margin-right: 1.25rem;
+      }
     }
     .createdby {
       position: absolute;
       right: 0;
       bottom: 0;
-      color: hsl(0, 0%, 30%);
+      color: hsl($hue_color, 0%, 30%);
     }
   }
 }

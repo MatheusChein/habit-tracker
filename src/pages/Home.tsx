@@ -38,7 +38,9 @@ export function Home() {
         </div>
       </main>
       <footer>
-        Created by Matheus Chen and Luiz Gustavo Frota
+        <div className="createdby">
+            Created by Matheus Chen and Luiz Gustavo Frota
+        </div>
       </footer>
     </div>
   )
