@@ -1,3 +1,49 @@
+@import '../../styles/root.scss';
 .habit {
-  background: red;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-radius: 5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl($hue_color, 100%, 92%);
+  border-radius: 8px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.14);
+  margin-bottom: 1.5rem;
+
+  h2 {
+    margin-left: 2rem;
+    font: 400 1.25rem 'Poppins', sans-serif;
+  }
+
+  .checkboxed {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+    input[type='checkbox'] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      /* create custom checkbox appearance */
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+
+      /* background-color only for content */
+      background-clip: content-box;
+      border: 1.5px solid #bbbbbb;
+      border-radius: 6px;
+      background: #ffffff;
+
+      &:checked {
+        background: hsl($hue_color, 80%, 63%);
+      }
+
+      &:focus {
+        outline: none !important;
+      }
+    }
+  }
+  /* checkbox aspect */
 }

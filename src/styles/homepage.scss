@@ -1,3 +1,4 @@
+@import 'root.scss';
 #homepage-auth {
   display: flex;
   justify-content: center;
@@ -17,11 +18,11 @@
     // *** Main text - Logo
     h1 {
       // First color Logo
-      color: hsl(0, 75%, 37%);
+      color: hsl($hue_color, 75%, 37%);
 
       // Second color Logo
       span {
-        color: hsl(0, 94%, 66%);
+        color: hsl($hue_color, 94%, 66%);
       }
     }
 
@@ -38,8 +39,8 @@
       border: 0;
       border-radius: 0.5rem;
 
-      background: hsl(0, 64%, 59%);
-      color: hsl(0, 0%, 100%);
+      background: hsl($hue_color, 64%, 59%);
+      color: hsl($hue_color, 0%, 100%);
 
       display: flex;
       align-items: center;
@@ -62,8 +63,13 @@
     bottom: 0;
     right: 0;
     padding: 1rem 1rem;
-    background: hsla(0, 94%, 66%, 0.5);
-    color: hsl(0, 0%, 30%);
-    font: 400 1rem 'Poppins', sans-serif;
+    background: hsla($hue_color, 94%, 66%, 0.5);
+
+    .createdby {
+      position: relative;
+      font: 400 1rem 'Poppins', sans-serif;
+      bottom: 0;
+      color: hsl($hue_color, 0%, 30%);
+    }
   }
 }

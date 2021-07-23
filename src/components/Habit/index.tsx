@@ -6,6 +6,46 @@ interface HabitProps {
 
 export function Habit({ name }: HabitProps) {
   return (
-    <h1 className='habit'>{name}</h1>
+    <div className='habit'>
+      <h2>{name}</h2>    
+      <div className="checkboxed">
+      
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+        
+      </div>
+    
+    </div>
+    
+    
   )
 }
